@@ -39,3 +39,6 @@ function filter(arr, fn) {
   }
   return newArray;
 }
+
+console.log(filter(myNames, name => name[0] === 'R'));
+//console.log(myNames.filter(name => name[0] === 'R'));
