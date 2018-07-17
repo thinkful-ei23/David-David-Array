@@ -1,3 +1,4 @@
+'use strict';
 function hazardWarningCreator (typeOfWarning){
     let warningCounter = 0;
 
@@ -5,7 +6,9 @@ function hazardWarningCreator (typeOfWarning){
         warningCounter++;
 
         console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
-        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+
+        let timeCounter = warningCounter === 1? 'time' : 'times;'
+        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} ${timeCounter} today!`);
         
     }
     
